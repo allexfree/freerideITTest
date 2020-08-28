@@ -56,3 +56,10 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.container {
+  display: block;
+  width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}

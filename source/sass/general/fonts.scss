@@ -1,7 +1,28 @@
 @font-face {
   font-weight: normal;
-  font-family: "Roboto";
+  font-family: "Noto";
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/RobotoRegular.woff2") format("woff2"), url("../fonts/RobotoRegular.woff") format("woff");
+  src: url("../fonts/NotoSansRegular.woff2") format("woff2"), url("../fonts/NotoSansRegular.woff") format("woff");
+}
+@font-face {
+  font-weight: bold;
+  font-family: "Noto";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/NotoSansBold.woff2") format("woff2"), url("../fonts/NotoSansBold.woff") format("woff");
+}
+@font-face {
+  font-weight: 500;
+  font-family: "Noto";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/NotoSansMedium.woff2") format("woff2"), url("../fonts/NotoSansMedium.woff") format("woff");
+}
+@font-face {
+  font-weight: 600;
+  font-family: "Noto";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/NotoSansSemiBold.woff2") format("woff2"), url("../fonts/NotoSansSemiBold.woff") format("woff");
 }
