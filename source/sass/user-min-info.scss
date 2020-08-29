@@ -1,0 +1,28 @@
+@import "../sass/general/variables.scss";
+@import "../sass/general/mixins.scss";
+
+.user-min-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-min-info__title {
+  display: inline-block;
+  margin-right: 35px;
+  font-weight: $bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+}
+
+.user-min-info__content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: -0.5px;
+  }
+}

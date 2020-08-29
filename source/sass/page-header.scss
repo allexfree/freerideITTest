@@ -1,0 +1,81 @@
+@import "../sass/general/variables.scss";
+@import "../sass/general/mixins.scss";
+
+.page-header {
+  position: relative;
+  display: block;
+}
+
+.page-header-topline {
+  display: block;
+  padding: 9px 0;
+  background-color: $gamma-color;
+}
+
+.page-header-topline__nav {
+  display: flex;
+}
+
+.page-header-topline__menu-list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-header-topline__menu-item {
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--mgn15 {
+    margin-right: 15px;
+  }
+
+  &--mgn50 {
+    margin-right: 50px;
+  }
+
+  &--mgn-auto {
+    margin-left: auto;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.page-header-topline__menu-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+  color: $second-color;
+  transition: 0.3s;
+  svg {
+    fill: $second-color;
+    margin-right: 5px;
+  }
+
+  &--bold {
+    font-weight: $bold;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.page-header-topline__menu-link-user-img {
+  margin-right: 10px;
+}
+
+.page-header-topline__menu-link-user-login {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid $second-color;
+  border-radius: 30px;
+}

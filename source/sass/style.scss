@@ -4,3 +4,33 @@
 @import "../sass/general/mixins.scss";
 @import "../sass/general/swiper.scss";
 @import "../sass/general/global.scss";
+
+
+/* header */
+
+@import "../sass/page-header.scss";
+@import "../sass/menu-burger.scss";
+@import "../sass/main-menu.scss";
+@import "../sass/info-menu.scss";
+@import "../sass/marker.scss";
+@import "../sass/login.scss";
+
+/* end of header */
+
+
+/* main */
+
+@import "../sass/page-main.scss";
+@import "../sass/logo.scss";
+@import "../sass/user-min-info.scss";
+@import "../sass/user-menu.scss";
+@import "../sass/user-profile.scss";
+
+/* end of main */
+
+
+/* forms */
+
+@import "../sass/forms/search.scss";
+
+/* forms */

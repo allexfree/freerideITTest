@@ -1,0 +1,31 @@
+@import "../general/variables.scss";
+@import "../general/mixins.scss";
+
+.search {
+  display: block;
+  margin-left: auto;
+}
+
+.search-input {
+  display: inline-block;
+  width: 190px;
+  padding: 9px 10px 9px 40px;
+  font-weight: $medium;
+  font-size: 16px;
+  color: $second-color;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+  background-color: $accent-color;
+  background-image: url("../img/icons/loupe.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: 17px center;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  &::placeholder {
+    padding-right: 10px;
+    color: $second-color;
+    text-align: right;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../sass/general/variables.scss";
+@import "../sass/general/mixins.scss";
+
+.info-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.info-menu-item {
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 50px;
+  }
+}
+
+.info-menu-link {
+  display: block;
+  position: relative;
+  transition: 0.3s;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}

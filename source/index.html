@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,17 +17,231 @@
 
 
 </head>
+
 <body>
-  <header>
-    <p>Header</p>
+
+  <header class="page-header">
+
+    <div class="page-header-topline">
+      <div class="container">
+
+        <nav class="page-header-topline__nav">
+          <div class="menu-burger">
+            <button class="menu-burger-btn" type="button" aria-label="Открыть закрыть меню">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <ul class="main-menu">
+            <li class="main-menu-item">
+              <a href="#" class="main-menu-link">
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite/sprite.svg#info"></use>
+                </svg>
+                О сервисе
+              </a>
+            </li>
+            <li class="main-menu-item">
+              <a href="#" class="main-menu-link">
+                <svg width="20" height="14">
+                  <use xlink:href="img/sprite/sprite.svg#loupe"></use>
+                </svg>
+                Подбор программы
+              </a>
+            </li>
+            <li class="main-menu-item">
+              <a href="#" class="main-menu-link main-menu-link--bold">Мои программы</a>
+            </li>
+            <li class="main-menu-item">
+              <a href="#" class="main-menu-link main-menu-link--bold">Навыки</a>
+            </li>
+            <li class="main-menu-item">
+              <a href="#" class="main-menu-link main-menu-link--bold">Тестирование</a>
+            </li>
+          </ul>
+
+          <ul class="info-menu">
+            <li class="info-menu-item">
+              <a href="#" class="info-menu-link info-menu-link--favorites" aria-label="Избранное">
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprite/sprite.svg#star"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="info-menu-item">
+              <a href="#" class="info-menu-link info-menu-link--messages" aria-label="Сообщения">
+                <svg width="20" height="19">
+                  <use xlink:href="img/sprite/sprite.svg#message"></use>
+                </svg>
+                <span class="marker">1</span>
+              </a>
+            </li>
+            <li class="info-menu-item">
+              <a href="#" class="info-menu-link info-menu-link--notification" aria-label="Уведомления">
+                <svg width="16" height="21">
+                  <use xlink:href="img/sprite/sprite.svg#notification"></use>
+                </svg>
+                <span class="marker">10</span>
+              </a>
+            </li>
+          </ul>
+
+          <a href="#" class="login">
+            <img class="login-img" width="29" height="29" src="img/user_login.png" alt="User">
+            <span>Выход</span>
+          </a>
+        </nav>
+
+      </div>
+    </div>
   </header>
 
-  <main>
-    <p>Hello world</p>
+  <main class="page-main">
+
+    <div class="page-main-topline">
+      <div class="container">
+
+        <div class="page-main-topline__group">
+          <div class="logo">
+            <a href="#" class="logo-link">
+              <img class="logo-img" src="img/logo.png" alt="Logo">
+              <span class="logo-text">Skill-Tracker</span>
+            </a>
+          </div>
+
+          <div class="user-min-info">
+            <p class="user-min-info__title">Иванов Константин</p>
+            <p class="user-min-info__content">
+              <span>12 лет | </span>
+              <span>6 класс | </span>
+              <span>школа 453</span>
+            </p>
+          </div>
+
+          <form class="search" action="#" method="get">
+            <input type="text" class="search-input" placeholder="Найти программу">
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="page-main-bottomline">
+      <nav class="page-main-navigation">
+        <ul class="user-menu">
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link">Профиль</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link">Мои программы</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link">Родители и учителя</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link user-menu-link--active">Настройки профиля</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="user-profile">
+      <div class="container">
+        <h1 class="user-profile-title">Настройки профиля</h1>
+        <div class="user-profile-content">
+          <div class="user-profile-picture">
+            <img class="user-profile-picture__img" width="142" height="142" src="img/user_profile.jpg" alt="User img">
+            <a href="#" class="user-profile-picture__link">Сменить фото</a>
+          </div>
+
+          <div class="user-profile-info">
+            <p class="user-profile-info__text user-profile-info__text--name">Иванов Константин Николаевич</p>
+            <p class="user-profile-info__text user-profile-info__text--birth">30.05.2010</p>
+            <p class="user-profile-info__text user-profile-info__text--school">Школа 1547</p>
+            <p class="user-profile-info__text user-profile-info__text--class">Класс 5В</p>
+            <a href="tel:+72344492745" class="user-profile-info__link user-profile-info__link--phone">+7 234 443 27
+              45</a>
+            <a href="mailto:aleksey234@mail.ru" class="user-profile-info__link user-profile-info__link--phone">aleksey234@mail.ru</a>
+            <p class="user-profile-info__text user-profile-info__text--social">
+              Facebook:
+              <a href="#" class="user-profile-info__link user-profile-info__link--facebook">alex_ivanov</a>
+            </p>
+            <p class="user-profile-info__text user-profile-info__text--social">
+              Vkontakte:
+              <a href="#" class="user-profile-info__link user-profile-info__link--facebook">alex_ivanov</a>
+            </p>
+            <p class="user-profile-info__text user-profile-info__text--social">
+              Instagram:
+              <a href="#" class="user-profile-info__link user-profile-info__link--facebook">alex_ivanov</a>
+            </p>
+          </div>
+
+          <div class="user-profile-controls">
+            <a href="#" class="user-profile-controls__link user-profile-controls__link--edit">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite/sprite.svg#pencil"></use>
+              </svg>
+              Редактировать
+            </a>
+            <a href="#" class="user-profile-controls__link user-profile-controls__link--change">
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite/sprite.svg#lock"></use>
+              </svg>
+              Изменить пароль
+            </a>
+          </div>
+
+          <div class="user-profile-levels">
+            <p class="user-profile-levels__title">Заполненность профиля</p>
+            <div class="user-profile-levels__content">
+              <div class="progress-circle">
+
+              </div>
+
+              <div class="levels">
+                <div class="levels-item">
+                  <p class="levels-item-title">Персональные данные</p>
+                  <div class="levels-item-group">
+                    <div class="levels-item__progress-bar">
+                      <span class="levels-item__progress-bar-fill"></span>
+                    </div>
+                    <span class="levels-item__progress-bar-text">90%</span>
+                  </div>
+                </div>
+
+                <div class="levels-item">
+                  <p class="levels-item-title">Тесты</p>
+                  <div class="levels-item-group">
+                    <div class="levels-item__progress-bar">
+                      <span class="levels-item__progress-bar-fill levels-item__progress-bar-fill--bad"></span>
+                    </div>
+                    <span class="levels-item__progress-bar-text">45%</span>
+                  </div>
+                </div>
+
+                <div class="levels-item">
+                  <p class="levels-item-title">Достижения</p>
+                  <div class="levels-item-group">
+                    <div class="levels-item__progress-bar">
+                      <span class="levels-item__progress-bar-fill"></span>
+                    </div>
+                    <span class="levels-item__progress-bar-text">89%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>FooterFooter</p>
+  <footer class="page-footer">
+
   </footer>
 
   <link rel="stylesheet" href="css/style.min.css">
@@ -39,4 +254,5 @@
 
 
 </body>
+
 </html>

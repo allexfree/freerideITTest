@@ -1,0 +1,20 @@
+@import "../sass/general/variables.scss";
+@import "../sass/general/mixins.scss";
+
+.logo {
+  display: block;
+  margin-right: 100px;
+}
+
+.logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-text {
+  font-weight: $bold;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+}
