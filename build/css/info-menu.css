@@ -1,0 +1,24 @@
+/* Colors */
+/* Fonts */
+/* Media */
+/* Colors */
+/* Fonts */
+/* Media */
+/* Retina */
+/* Media */
+.info-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto; }
+
+.info-menu-item {
+  margin-right: 40px; }
+  .info-menu-item:last-child {
+    margin-right: 50px; }
+
+.info-menu-link {
+  display: block;
+  position: relative;
+  transition: 0.3s; }
+  .info-menu-link:hover, .info-menu-link:focus {
+    opacity: 0.7; }

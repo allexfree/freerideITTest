@@ -1,0 +1,32 @@
+/* Colors */
+/* Fonts */
+/* Media */
+/* Colors */
+/* Fonts */
+/* Media */
+/* Retina */
+/* Media */
+.user-menu {
+  display: flex;
+  flex-wrap: wrap; }
+
+.user-menu-item {
+  display: block;
+  margin-right: 70px; }
+  .user-menu-item:last-child {
+    margin-right: 0; }
+
+.user-menu-link {
+  display: block;
+  height: 100%;
+  padding: 16px 0 23px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 15px;
+  letter-spacing: -0.5px;
+  border-top: 7px solid transparent;
+  transition: opacity 0.3s; }
+  .user-menu-link--active {
+    border-top: 7px solid #80C02F; }
+  .user-menu-link:hover, .user-menu-link:focus {
+    opacity: 0.7; }

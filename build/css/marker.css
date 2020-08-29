@@ -1,0 +1,22 @@
+/* Colors */
+/* Fonts */
+/* Media */
+/* Colors */
+/* Fonts */
+/* Media */
+/* Retina */
+/* Media */
+.marker {
+  position: absolute;
+  content: "";
+  top: -5px;
+  right: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  line-height: 16px;
+  border-radius: 50%;
+  background-color: #EB6246; }
