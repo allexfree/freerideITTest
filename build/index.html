@@ -163,7 +163,8 @@
             <p class="user-profile-info__text user-profile-info__text--class">Класс 5В</p>
             <a href="tel:+72344492745" class="user-profile-info__link user-profile-info__link--phone">+7 234 443 27
               45</a>
-            <a href="mailto:aleksey234@mail.ru" class="user-profile-info__link user-profile-info__link--phone">aleksey234@mail.ru</a>
+            <a href="mailto:aleksey234@mail.ru"
+              class="user-profile-info__link user-profile-info__link--phone">aleksey234@mail.ru</a>
             <p class="user-profile-info__text user-profile-info__text--social">
               Facebook:
               <a href="#" class="user-profile-info__link user-profile-info__link--facebook">alex_ivanov</a>
@@ -196,8 +197,14 @@
           <div class="user-profile-levels">
             <p class="user-profile-levels__title">Заполненность профиля</p>
             <div class="user-profile-levels__content">
-              <div class="progress-circle">
-
+              <div class="progress-card">
+                <div class="progress-card-content">
+                  <svg>
+                    <circle cx="80" cy="80" r="80"></circle>
+                    <circle cx="80" cy="80" r="80"></circle>
+                  </svg>
+                  <p class="progress-card-text">94<span>%</span></p>
+                </div>
               </div>
 
               <div class="levels">
@@ -235,13 +242,53 @@
           </div>
 
         </div>
+        <div class="user-profile-setup">
+          <div class="user-profile-setup__switch">
+            <input id="desable-email" class="user-profile-setup__switch-input" type="radio" name="email-desable">
+            <label class="user-profile-setup__switch-label" for="desable-email">Отключить рассылку</label>
+          </div>
+
+          <a href="#" class="user-profile-setup__link">Удалить аккаунт</a>
+        </div>
       </div>
     </section>
 
   </main>
 
   <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer-content">
+        <ul class="footer-menu">
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu-link">О сервисе</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu-link">Подбор программы</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#" class="footer-menu-link">Наши учителя</a>
+          </li>
+        </ul>
 
+        <ul class="social-links">
+          <li class="social-links-item">
+            <a href="#" class="social-links-link" aria-label="Наша страница в Фейсбук"></a>
+          </li>
+          <li class="social-links-item">
+            <a href="#" class="social-links-link" aria-label="Наша страница в ВК"></a>
+          </li>
+          <li class="social-links-item">
+            <a href="#" class="social-links-link" aria-label="Наша страница в Инстаграм"></a>
+          </li>
+        </ul>
+
+        <div class="contacts">
+          <a href="tel:+72344432745" class="contacts-link contacts-link--phone">+7 234 443 27 45</a>
+          <a href="mailto:info@skill-traker.ru" class="contacts-link contacts-link--email">info@skill-traker.ru</a>
+        </div>
+        <p class="page-footer-block">&#169;2020</p>
+      </div>
+    </div>
   </footer>
 
   <link rel="stylesheet" href="css/style.min.css">
