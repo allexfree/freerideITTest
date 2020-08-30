@@ -7,7 +7,9 @@
 /* Retina */
 /* Media */
 .progress-card {
-  position: relative; }
+  position: relative;
+  padding-right: 23px;
+  margin-bottom: 40px; }
   .progress-card svg {
     position: relative;
     width: 169px;
