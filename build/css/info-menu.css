@@ -10,15 +10,35 @@
   display: flex;
   align-items: center;
   margin-left: auto; }
+  @media (max-width: 1024px) {
+    .info-menu {
+      margin-left: 0; } }
+  @media (max-width: 767px) {
+    .info-menu {
+      margin-right: 5%; } }
 
 .info-menu-item {
   margin-right: 40px; }
   .info-menu-item:last-child {
     margin-right: 50px; }
+  @media (max-width: 1024px) {
+    .info-menu-item {
+      margin-right: 10px; }
+      .info-menu-item:last-child {
+        margin-right: 0; } }
+  @media (max-width: 767px) {
+    .info-menu-item {
+      margin-right: 20px; } }
+  @media (max-width: 576px) {
+    .info-menu-item {
+      margin-right: 15px; } }
 
 .info-menu-link {
   display: block;
   position: relative;
-  transition: 0.3s; }
+  transition: opacity 0.3s; }
   .info-menu-link:hover, .info-menu-link:focus {
     opacity: 0.7; }
+  @media (max-width: 1024px) {
+    .info-menu-link svg {
+      transform: scale(0.7); } }

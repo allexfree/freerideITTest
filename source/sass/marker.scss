@@ -13,6 +13,13 @@
   height: 16px;
   font-size: 10px;
   line-height: 16px;
+  color: $second-color;
   border-radius: 50%;
   background-color: $accent-color;
+  @include media-md {
+    top: -2px;
+    right: -2px;
+    width: 13px;
+    height: 13px;
+  }
 }

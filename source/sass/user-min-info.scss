@@ -4,6 +4,19 @@
 .user-min-info {
   display: flex;
   flex-wrap: wrap;
+  @include media-md {
+    flex-direction: column;
+  }
+
+  @include media-767 {
+    margin-left: auto;
+  }
+
+  @include media-xs {
+    order: 1;
+    width: 100%;
+    padding-top: 20px;
+  }
 }
 
 .user-min-info__title {
@@ -13,6 +26,15 @@
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.5px;
+  @include media-md {
+    margin-bottom: 10px;
+  }
+
+  @include media-767 {
+    margin-right: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
 }
 
 .user-min-info__content {
@@ -24,5 +46,8 @@
     font-size: 16px;
     line-height: 15px;
     letter-spacing: -0.5px;
+    @include media-767 {
+      font-size: 13px;
+    }
   }
 }

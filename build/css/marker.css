@@ -18,5 +18,12 @@
   height: 16px;
   font-size: 10px;
   line-height: 16px;
+  color: #ffffff;
   border-radius: 50%;
   background-color: #EB6246; }
+  @media (max-width: 1024px) {
+    .marker {
+      top: -2px;
+      right: -2px;
+      width: 13px;
+      height: 13px; } }

@@ -27,6 +27,22 @@
         stroke: #80C02F;
         stroke-dasharray: 503;
         stroke-dashoffset: calc((503px * 94) / 100 - 503px); }
+    @media (max-width: 576px) {
+      .progress-card svg {
+        transform: rotate(-90deg) scale(0.8); } }
+  @media (max-width: 1280px) {
+    .progress-card {
+      padding-right: 0; } }
+  @media (max-width: 768px) {
+    .progress-card {
+      margin-bottom: 0;
+      margin-left: 18%; } }
+  @media (max-width: 767px) {
+    .progress-card {
+      margin-left: 5%; } }
+  @media (max-width: 576px) {
+    .progress-card {
+      margin-left: 0; } }
 
 .progress-card-content {
   position: relative;

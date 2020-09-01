@@ -69,6 +69,12 @@ $double-dpx: 1.5dppx;
   }
 }
 
+@mixin media-767 {
+  @media (max-width: $media-767) {
+    @content;
+  }
+}
+
 @mixin media-xs {
   @media (max-width: $media-xs) {
     @content;

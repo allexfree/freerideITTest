@@ -5,12 +5,19 @@
   display: flex;
   align-items: center;
   color: $second-color;
-  transition: 0.3s;
+  transition: opacity 0.3s;
   span {
     display: inline-block;
     padding: 5px 15px;
     border: 1px solid $second-color;
     border-radius: 30px;
+    @include media-md {
+      font-size: 12px;
+    }
+
+    @include media-767 {
+      display: none;
+    }
   }
 
   &:hover,
@@ -21,4 +28,7 @@
 
 .login-img {
   margin-right: 10px;
+  @include media-767 {
+    margin-right: 0;
+  }
 }

@@ -5,6 +5,13 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+  @include media-md {
+    margin-left: 0;
+  }
+
+  @include media-767 {
+    margin-right: 5%;
+  }
 }
 
 .info-menu-item {
@@ -12,14 +19,35 @@
   &:last-child {
     margin-right: 50px;
   }
+
+  @include media-md {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @include media-767 {
+    margin-right: 20px;
+  }
+
+  @include media-xs {
+    margin-right: 15px;
+  }
 }
 
 .info-menu-link {
   display: block;
   position: relative;
-  transition: 0.3s;
+  transition: opacity 0.3s;
   &:hover,
   &:focus {
     opacity: 0.7;
+  }
+
+  @include media-md {
+    svg {
+      transform: scale(0.7);
+    }
   }
 }

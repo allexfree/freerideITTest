@@ -4,6 +4,17 @@
 .levels {
   display: flex;
   flex-direction: column;
+  @include media-md {
+    align-items: center;
+  }
+
+  @include media-sm {
+    order: -1;
+  }
+
+  @include media-xs {
+    order: 0;
+  }
 }
 
 .levels-item-title {
@@ -11,10 +22,17 @@
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.5px;
+  @include media-xs {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
 }
 
 .levels-item {
   margin-bottom: 20px;
+  @include media-xs {
+    margin-bottom: 15px;
+  }
 }
 
 .levels-item-group {
@@ -29,6 +47,9 @@
   width: 137px;
   height: 11px;
   border: 1px solid $fourth-color;
+  @include media-xs {
+    width: 97px;
+  }
 }
 
 .levels-item__progress-bar-fill {
@@ -64,5 +85,13 @@
 
   &--bad {
     color: $third-color;
+  }
+
+  @include media-md {
+    padding-left: 10px;
+  }
+
+  @include media-xs {
+    font-size: 14px;
   }
 }

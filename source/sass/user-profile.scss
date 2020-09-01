@@ -4,6 +4,9 @@
 .user-profile {
   display: block;
   padding-bottom: 300px;
+  @include media-sm {
+    padding-bottom: 40px;
+  }
 }
 
 .user-profile-title {
@@ -12,6 +15,13 @@
   font-size: 32px;
   line-height: 28px;
   letter-spacing: -0.5px;
+  @include media-767 {
+    font-size: 28px;
+  }
+
+  @include media-xs {
+    text-align: center;
+  }
 }
 
 .user-profile-content {
@@ -19,6 +29,13 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
+  @include media-md {
+    justify-content: space-between;
+  }
+
+  @include media-xs {
+    flex-direction: column;
+  }
 }
 
 .user-profile-picture {
@@ -26,11 +43,35 @@
   flex-direction: column;
   align-items: center;
   margin-right: 40px;
+  @include media-md {
+    align-items: flex-start;
+    order: 1;
+    width: 33.3%;
+    margin-right: 0;
+  }
+
+  @include media-sm {
+    width: 40%;
+  }
+
+  @include media-767 {
+    width: 30%;
+  }
+
+  @include media-xs {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 45px;
+  }
 }
 
 .user-profile-picture__img {
   border-radius: 50%;
   margin-bottom: 15px;
+  @include media-xs {
+    width: 121px;
+    height: 121px;
+  }
 }
 
 .user-profile-picture__link {
@@ -43,6 +84,14 @@
   &:focus {
     opacity: 0.7;
   }
+
+  @include media-md {
+    margin-left: 9%;
+  }
+
+  @include media-xs {
+    margin-left: 0;
+  }
 }
 
 .user-profile-info {
@@ -50,6 +99,22 @@
   flex-direction: column;
   padding-top: 10px;
   margin-right: 40px;
+  @include media-md {
+    order: 2;
+    width: 33.3%;
+    margin-right: 0;
+  }
+
+  @include media-sm {
+    order: 3;
+    width: 50%;
+    padding-top: 0;
+  }
+
+  @include media-xs {
+    width: auto;
+    margin: 0 auto 35px;
+  }
 }
 
 .user-profile-info__text,
@@ -57,6 +122,9 @@
   font-size: 18px;
   line-height: 32px;
   letter-spacing: -0.5px;
+  @include media-xs {
+    font-size: 14px;
+  }
 }
 
 .user-profile-info__link {
@@ -72,6 +140,34 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 5px;
+  @include media-lg {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  @include media-md {
+    flex-direction: row;
+    justify-content: center;
+    order: 4;
+    width: 100%;
+  }
+
+  @include media-sm {
+    justify-content: flex-end;
+    align-content: start;
+    width: 50%;
+    padding-top: 0;
+  }
+
+  @include media-xs {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  @include media-xs {
+    width: auto;
+  }
 }
 
 .user-profile-controls__link {
@@ -82,6 +178,7 @@
   width: 190px;
   padding: 12.5px 0;
   margin-right: 20px;
+  margin-bottom: 15px;
   font-weight: 500;
   font-size: 16px;
   line-height: 15px;
@@ -106,6 +203,14 @@
   &:focus {
     opacity: 0.7;
   }
+
+  @include media-sm {
+    margin-right: 0;
+  }
+
+  @include media-xs {
+    margin: 0 auto 15px;
+  }
 }
 
 .user-profile-levels {
@@ -115,6 +220,46 @@
   display: flex;
   flex-direction: column;
   margin-left: auto;
+  @include media-lg {
+    position: static;
+  }
+
+  @include media-md {
+    order: 3;
+    width: 33.3%;
+  }
+
+  @include media-sm {
+    order: 2;
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  @include media-767 {
+    width: 70%;
+  }
+
+  @include media-xs {
+    width: 100%;
+  }
+}
+
+.user-profile-levels__content {
+  display: flex;
+  flex-direction: column;
+  @include media-sm {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @include media-767 {
+    justify-content: flex-end;
+  }
+
+  @include media-xs {
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
 
 .user-profile-levels__title {
@@ -125,12 +270,37 @@
   font-size: 16px;
   line-height: 22px;
   letter-spacing: -0.5px;
+  @include media-lg {
+    width: 90%;
+  }
+
+  @include media-md {
+    width: 100%;
+    text-align: center;
+  }
+
+  @include media-sm {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  @include media-767 {
+    padding-left: 28.5%;
+  }
+
+  @include media-xs {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 .user-profile-setup {
   display: flex;
   flex-direction: column;
   padding-left: 182px;
+  @include media-lg {
+    padding-left: 0;
+  }
 }
 
 .user-profile-setup__switch {

@@ -9,15 +9,31 @@
 .levels {
   display: flex;
   flex-direction: column; }
+  @media (max-width: 1024px) {
+    .levels {
+      align-items: center; } }
+  @media (max-width: 768px) {
+    .levels {
+      order: -1; } }
+  @media (max-width: 576px) {
+    .levels {
+      order: 0; } }
 
 .levels-item-title {
   margin-bottom: 5px;
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.5px; }
+  @media (max-width: 576px) {
+    .levels-item-title {
+      margin-bottom: 0;
+      font-size: 12px; } }
 
 .levels-item {
   margin-bottom: 20px; }
+  @media (max-width: 576px) {
+    .levels-item {
+      margin-bottom: 15px; } }
 
 .levels-item-group {
   display: flex;
@@ -31,6 +47,9 @@
   width: 137px;
   height: 11px;
   border: 1px solid #C4C4C4; }
+  @media (max-width: 576px) {
+    .levels-item__progress-bar {
+      width: 97px; } }
 
 .levels-item__progress-bar-fill {
   display: block;
@@ -56,3 +75,9 @@
     color: #80C02F; }
   .levels-item__progress-bar-text--bad {
     color: #FF981F; }
+  @media (max-width: 1024px) {
+    .levels-item__progress-bar-text {
+      padding-left: 10px; } }
+  @media (max-width: 576px) {
+    .levels-item__progress-bar-text {
+      font-size: 14px; } }

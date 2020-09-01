@@ -4,20 +4,33 @@
 .main-menu {
   display: flex;
   align-items: center;
+  @include media-767 {
+    display: none;
+  }
 }
 
 .main-menu-item {
   margin-right: 40px;
   &:first-child {
     margin-right: 15px;
+    @include media-md {
+      margin-right: 10px;
+    }
   }
 
   &:nth-child(2) {
     margin-right: 50px;
+    @include media-md {
+      margin-right: 15px;
+    }
   }
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include media-md {
+    margin-right: 15px;
   }
 }
 
@@ -27,10 +40,13 @@
   line-height: 15px;
   letter-spacing: -0.5px;
   color: $second-color;
-  transition: 0.3s;
+  transition: opacity 0.3s;
   svg {
     fill: $second-color;
     margin-right: 5px;
+    @include media-md {
+      margin-right: 2px;
+    }
   }
 
   &--bold {
@@ -40,5 +56,9 @@
   &:hover,
   &:focus {
     opacity: 0.7;
+  }
+
+  @include media-md {
+    font-size: 13px;
   }
 }

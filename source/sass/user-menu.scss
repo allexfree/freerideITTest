@@ -4,6 +4,24 @@
 .user-menu {
   display: flex;
   flex-wrap: wrap;
+  @include media-lg {
+    justify-content: center;
+  }
+
+  @include media-sm {
+    justify-content: space-around;
+  }
+
+  @include media-767 {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 810px;
+  }
+
+  @include media-xs {
+    justify-content: flex-start;
+    width: 720px;
+  }
 }
 
 .user-menu-item {
@@ -11,6 +29,18 @@
   margin-right: 70px;
   &:last-child {
     margin-right: 0;
+  }
+
+  @include media-md {
+    margin-right: 40px;
+  }
+
+  @include media-sm {
+    margin-right: 0;
+  }
+
+  @include media-xs {
+    margin-right: 10px;
   }
 }
 
@@ -31,5 +61,9 @@
   &:hover,
   &:focus {
     opacity: 0.7;
+  }
+
+  @include media-767 {
+    padding: 16px 10px 23px;
   }
 }

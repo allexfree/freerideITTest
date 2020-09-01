@@ -14,6 +14,14 @@
 
 .page-header-topline__nav {
   display: flex;
+  flex-wrap: wrap;
+  @include media-md {
+    justify-content: space-between;
+  }
+
+  @include media-767 {
+    justify-content: flex-end;
+  }
 }
 
 .page-header-topline__menu-list {
@@ -85,6 +93,13 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 15px 0;
+  @include media-767 {
+    justify-content: center;
+  }
+
+  @include media-xs {
+    justify-content: space-between;
+  }
 }
 
 .page-header-bottomline {
@@ -93,9 +108,24 @@
   width: 1280px;
   padding: 0 20px;
   margin: 0 auto 30px;
+  @include media-lg {
+    width: 100%;
+  }
+
+  @include media-767 {
+    padding: 0;
+    margin-bottom: 15px;
+  }
 }
 
 .page-header-navigation {
   width: 73%;
   border-top: 2px solid $gamma-color;
+  @include media-lg {
+    width: 100%;
+  }
+
+  @include media-767 {
+    overflow-x: scroll;
+  }
 }

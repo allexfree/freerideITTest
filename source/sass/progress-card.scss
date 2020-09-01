@@ -24,6 +24,27 @@
         stroke-dashoffset: calc((503px * 94) / 100 - 503px);
       }
     }
+
+    @include media-xs {
+      transform: rotate(-90deg) scale(0.8);
+    }
+  }
+
+  @include media-lg {
+    padding-right: 0;
+  }
+
+  @include media-sm {
+    margin-bottom: 0;
+    margin-left: 18%;
+  }
+
+  @include media-767 {
+    margin-left: 5%;
+  }
+
+  @include media-xs {
+    margin-left: 0;
   }
 }
 

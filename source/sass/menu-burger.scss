@@ -8,6 +8,10 @@
   width: 22px;
   display: none;
   align-self: center;
+  @include media-767 {
+    left: 10px;
+    display: block;
+  }
 }
 
 .menu-burger-btn {

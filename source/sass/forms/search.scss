@@ -28,4 +28,11 @@
     color: $second-color;
     text-align: right;
   }
+
+  @include media-767 {
+    width: 160px;
+    padding: 8px 10px;
+    font-size: 13px;
+    background-position: 10px center;
+  }
 }

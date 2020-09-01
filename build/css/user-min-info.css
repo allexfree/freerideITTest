@@ -9,6 +9,17 @@
 .user-min-info {
   display: flex;
   flex-wrap: wrap; }
+  @media (max-width: 1024px) {
+    .user-min-info {
+      flex-direction: column; } }
+  @media (max-width: 767px) {
+    .user-min-info {
+      margin-left: auto; } }
+  @media (max-width: 576px) {
+    .user-min-info {
+      order: 1;
+      width: 100%;
+      padding-top: 20px; } }
 
 .user-min-info__title {
   display: inline-block;
@@ -17,6 +28,14 @@
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.5px; }
+  @media (max-width: 1024px) {
+    .user-min-info__title {
+      margin-bottom: 10px; } }
+  @media (max-width: 767px) {
+    .user-min-info__title {
+      margin-right: 0;
+      margin-bottom: 5px;
+      font-size: 16px; } }
 
 .user-min-info__content {
   display: flex;
@@ -27,3 +46,6 @@
     font-size: 16px;
     line-height: 15px;
     letter-spacing: -0.5px; }
+    @media (max-width: 767px) {
+      .user-min-info__content span {
+        font-size: 13px; } }
