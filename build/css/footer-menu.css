@@ -1,0 +1,22 @@
+/* Colors */
+/* Fonts */
+/* Media */
+/* Colors */
+/* Fonts */
+/* Media */
+/* Retina */
+/* Media */
+.footer-menu {
+  display: flex;
+  flex-direction: column; }
+
+.footer-menu-link {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: underline;
+  color: #ffffff;
+  transition: opacity 0.3s; }
+  .footer-menu-link:hover, .footer-menu-link:focus {
+    opacity: 0.7; }

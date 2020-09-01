@@ -238,8 +238,12 @@
         </div>
         <div class="user-profile-setup">
           <div class="user-profile-setup__switch">
-            <input id="desable-email" class="user-profile-setup__switch-input" type="radio" name="email-desable">
-            <label class="user-profile-setup__switch-label" for="desable-email">Отключить рассылку</label>
+            <div class="user-profile-setup__switch-group">
+              <input id="desable-email" class="user-profile-setup__switch-input" type="radio" name="email-desable" value="on">
+              <input class="user-profile-setup__switch-input" type="radio" name="email-desable" value="off">
+              <span class="user-profile-setup__switch-switcher"></span>
+            </div>
+            <span class="user-profile-setup__switch-text">Отключить рассылку</span>
           </div>
 
           <a href="#" class="user-profile-setup__link">Удалить аккаунт</a>
@@ -266,20 +270,36 @@
 
         <ul class="social-links">
           <li class="social-links-item">
-            <a href="#" class="social-links-link" aria-label="Наша страница в Фейсбук"></a>
+            <a href="#" class="social-links-link" aria-label="Наша страница в Фейсбук">
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite/sprite.svg#icon_facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="social-links-item">
-            <a href="#" class="social-links-link" aria-label="Наша страница в ВК"></a>
+            <a href="#" class="social-links-link" aria-label="Наша страница в ВК">
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite/sprite.svg#icon_vk"></use>
+              </svg>
+            </a>
           </li>
           <li class="social-links-item">
-            <a href="#" class="social-links-link" aria-label="Наша страница в Инстаграм"></a>
+            <a href="#" class="social-links-link" aria-label="Наша страница в Инстаграм">
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite/sprite.svg#icon_insta"></use>
+              </svg>
+            </a>
           </li>
         </ul>
 
-        <div class="contacts">
-          <a href="tel:+72344432745" class="contacts-link contacts-link--phone">+7 234 443 27 45</a>
-          <a href="mailto:info@skill-traker.ru" class="contacts-link contacts-link--email">info@skill-traker.ru</a>
-        </div>
+        <ul class="contacts">
+          <li class="contacts-item">
+            <a href="tel:+72344432745" class="contacts-link contacts-link--phone">+7 234 443 27 45</a>
+          </li>
+          <li class="contacts-item">
+            <a href="mailto:info@skill-traker.ru" class="contacts-link contacts-link--email">info@skill-traker.ru</a>
+          </li>
+        </ul>
         <p class="page-footer-block">&#169;2020</p>
       </div>
     </div>

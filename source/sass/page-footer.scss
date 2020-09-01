@@ -1,0 +1,27 @@
+@import "../sass/general/variables.scss";
+@import "../sass/general/mixins.scss";
+
+
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $gamma-color;
+}
+
+.page-footer-content {
+  position: relative;
+  display: flex;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0 75px 0;
+}
+
+.page-footer-block {
+  position: absolute;
+  bottom: 77px;
+  right: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: $second-color;
+  opacity: 0.8;
+}

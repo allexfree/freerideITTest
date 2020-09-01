@@ -1,0 +1,23 @@
+/* Colors */
+/* Fonts */
+/* Media */
+/* Colors */
+/* Fonts */
+/* Media */
+/* Retina */
+/* Media */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto; }
+
+.contacts-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  transition: opacity 0.3s; }
+  .contacts-link:hover, .contacts-link:focus {
+    opacity: 0.7; }

@@ -1,0 +1,21 @@
+@import "../sass/general/variables.scss";
+@import "../sass/general/mixins.scss";
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-menu-link {
+  display: block;
+  font-weight: $medium;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: underline;
+  color: $second-color;
+  transition: opacity 0.3s;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}

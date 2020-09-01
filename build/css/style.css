@@ -857,6 +857,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  height: 100%;
   min-width: 320px;
   margin: 0 auto;
   font-family: "Noto", "Arial", sans-serif;
@@ -1266,7 +1267,8 @@ input[type="radio"].visually-hidden {
 /* Retina */
 /* Media */
 .user-profile {
-  display: block; }
+  display: block;
+  padding-bottom: 300px; }
 
 .user-profile-title {
   margin-top: 0;
@@ -1278,7 +1280,8 @@ input[type="radio"].visually-hidden {
 .user-profile-content {
   position: relative;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 60px; }
 
 .user-profile-picture {
   display: flex;
@@ -1363,6 +1366,77 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: -0.5px; }
+
+.user-profile-setup {
+  display: flex;
+  flex-direction: column;
+  padding-left: 182px; }
+
+.user-profile-setup__switch {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px; }
+
+.user-profile-setup__switch-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  order: 1;
+  width: 44px;
+  height: 20px;
+  background-color: #DFE2E5;
+  border-radius: 30px; }
+
+.user-profile-setup__switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  z-index: 2; }
+
+.user-profile-setup__switch-switcher {
+  position: relative;
+  top: 0;
+  left: 22px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  z-index: 1;
+  transition: left 0.3s, background-color 0.3s; }
+
+.user-profile-setup__switch-group input:checked ~ .user-profile-setup__switch-switcher {
+  left: 0;
+  background-color: #DFE2E5; }
+
+.user-profile-setup__switch-group input ~ :checked ~ .user-profile-setup__switch-switcher {
+  left: 22px;
+  background-color: #80C02F; }
+
+.user-profile-setup__switch-group input:checked {
+  z-index: 0; }
+
+.user-profile-setup__switch-text {
+  margin-right: 30px;
+  font-size: 18px;
+  letter-spacing: -0.5px; }
+
+.user-profile-setup__link {
+  display: block;
+  -ms-grid-row-align: start;
+      align-self: start;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-decoration: underline;
+  transition: opacity 0.3s; }
+  .user-profile-setup__link:hover, .user-profile-setup__link:focus {
+    opacity: 0.7; }
 
 /* Colors */
 /* Fonts */
@@ -1480,6 +1554,107 @@ input[type="radio"].visually-hidden {
     color: #FF981F; }
 
 /* end of main */
+/* footer */
+/* Colors */
+/* Fonts */
+/* Media */
+/* Colors */
+/* Fonts */
+/* Media */
+/* Retina */
+/* Media */
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #80C02F; }
+
+.page-footer-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0 75px 0; }
+
+.page-footer-block {
+  position: absolute;
+  bottom: 77px;
+  right: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  opacity: 0.8; }
+
+/* Colors */
+/* Fonts */
+/* Media */
+/* Colors */
+/* Fonts */
+/* Media */
+/* Retina */
+/* Media */
+.footer-menu {
+  display: flex;
+  flex-direction: column; }
+
+.footer-menu-link {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: underline;
+  color: #ffffff;
+  transition: opacity 0.3s; }
+  .footer-menu-link:hover, .footer-menu-link:focus {
+    opacity: 0.7; }
+
+/* Colors */
+/* Fonts */
+/* Media */
+/* Colors */
+/* Fonts */
+/* Media */
+/* Retina */
+/* Media */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto; }
+
+.social-links-item {
+  margin-right: 35px; }
+  .social-links-item:last-child {
+    margin-right: 0; }
+
+.social-links-link {
+  display: block;
+  transition: opacity 0.3s; }
+  .social-links-link:hover, .social-links-link:focus {
+    opacity: 0.7; }
+
+/* Colors */
+/* Fonts */
+/* Media */
+/* Colors */
+/* Fonts */
+/* Media */
+/* Retina */
+/* Media */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto; }
+
+.contacts-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  transition: opacity 0.3s; }
+  .contacts-link:hover, .contacts-link:focus {
+    opacity: 0.7; }
+
+/* end of footer */
 /* forms */
 /* Colors */
 /* Fonts */

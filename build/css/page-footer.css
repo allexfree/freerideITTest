@@ -1,0 +1,27 @@
+/* Colors */
+/* Fonts */
+/* Media */
+/* Colors */
+/* Fonts */
+/* Media */
+/* Retina */
+/* Media */
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #80C02F; }
+
+.page-footer-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0 75px 0; }
+
+.page-footer-block {
+  position: absolute;
+  bottom: 77px;
+  right: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  opacity: 0.8; }
