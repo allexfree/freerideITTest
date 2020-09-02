@@ -16,6 +16,9 @@
   display: flex;
   flex-wrap: wrap;
   padding: 50px 0 75px 0; }
+  @media (max-width: 576px) {
+    .page-footer-content {
+      align-items: flex-end; } }
 
 .page-footer-block {
   position: absolute;
@@ -25,3 +28,15 @@
   line-height: 18px;
   color: #ffffff;
   opacity: 0.8; }
+  @media (max-width: 576px) {
+    .page-footer-block {
+      position: static;
+      order: 4;
+      width: 100%;
+      padding-top: 30px;
+      margin-bottom: -30px;
+      text-align: center; } }
+  @media (max-width: 375px) {
+    .page-footer-block {
+      order: 0;
+      text-align: left; } }

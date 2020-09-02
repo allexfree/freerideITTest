@@ -64,7 +64,7 @@
 .user-profile-picture__img {
   border-radius: 50%;
   margin-bottom: 15px; }
-  @media (max-width: 576px) {
+  @media (max-width: 375px) {
     .user-profile-picture__img {
       width: 121px;
       height: 121px; } }
@@ -103,13 +103,16 @@
     .user-profile-info {
       width: auto;
       margin: 0 auto 35px; } }
+  @media (max-width: 375px) {
+    .user-profile-info {
+      margin: 0 0 35px; } }
 
 .user-profile-info__text,
 .user-profile-info__link {
   font-size: 18px;
   line-height: 32px;
   letter-spacing: -0.5px; }
-  @media (max-width: 576px) {
+  @media (max-width: 375px) {
     .user-profile-info__text,
     .user-profile-info__link {
       font-size: 14px; } }
@@ -144,10 +147,7 @@
     .user-profile-controls {
       flex-direction: column;
       justify-content: flex-start;
-      width: 100%; } }
-  @media (max-width: 576px) {
-    .user-profile-controls {
-      width: auto; } }
+      align-content: center; } }
 
 .user-profile-controls__link {
   display: flex;
@@ -180,6 +180,12 @@
   @media (max-width: 576px) {
     .user-profile-controls__link {
       margin: 0 auto 15px; } }
+  @media (max-width: 375px) {
+    .user-profile-controls__link {
+      padding: 7.5px 0;
+      font-size: 13px; }
+      .user-profile-controls__link--edit {
+        padding: 5px 0; } }
 
 .user-profile-levels {
   position: absolute;
@@ -219,8 +225,11 @@
       justify-content: flex-end; } }
   @media (max-width: 576px) {
     .user-profile-levels__content {
-      justify-content: space-between;
-      margin: 0 auto; } }
+      justify-content: center; } }
+  @media (max-width: 375px) {
+    .user-profile-levels__content {
+      overflow: hidden;
+      justify-content: space-around; } }
 
 .user-profile-levels__title {
   display: block;
@@ -295,13 +304,17 @@
   z-index: 1;
   transition: left 0.3s, background-color 0.3s; }
 
-.user-profile-setup__switch-group input:checked ~ .user-profile-setup__switch-switcher {
-  left: 0;
-  background-color: #DFE2E5; }
-
-.user-profile-setup__switch-group input ~ :checked ~ .user-profile-setup__switch-switcher {
+.user-profile-setup__switch-group input:not(:checked) ~ .user-profile-setup__switch-switcher {
   left: 22px;
   background-color: #80C02F; }
+
+.user-profile-setup__switch-group input:checked ~ .user-profile-setup__switch-switcher {
+  left: 22px;
+  background-color: #80C02F; }
+
+.user-profile-setup__switch-group input ~ :checked ~ .user-profile-setup__switch-switcher {
+  left: 0;
+  background-color: #DFE2E5; }
 
 .user-profile-setup__switch-group input:checked {
   z-index: 0; }

@@ -8,15 +8,15 @@
 /* Media */
 .menu-burger {
   position: absolute;
-  top: 5px;
-  left: 0;
+  top: 15px;
+  left: 10px;
   width: 22px;
   display: none;
   -ms-grid-row-align: center;
-      align-self: center; }
+      align-self: center;
+  z-index: 1; }
   @media (max-width: 767px) {
     .menu-burger {
-      left: 10px;
       display: block; } }
 
 .menu-burger-btn {

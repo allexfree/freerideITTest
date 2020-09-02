@@ -11,9 +11,11 @@
 .page-footer-content {
   position: relative;
   display: flex;
-  // justify-content: space-between;
   flex-wrap: wrap;
   padding: 50px 0 75px 0;
+  @include media-xs {
+    align-items: flex-end;
+  }
 }
 
 .page-footer-block {
@@ -24,4 +26,17 @@
   line-height: 18px;
   color: $second-color;
   opacity: 0.8;
+  @include media-xs {
+    position: static;
+    order: 4;
+    width: 100%;
+    padding-top: 30px;
+    margin-bottom: -30px;
+    text-align: center;
+  }
+
+  @include media-375 {
+    order: 0;
+    text-align: left;
+  }
 }

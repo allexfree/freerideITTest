@@ -6,6 +6,10 @@
   flex-direction: column;
   align-items: flex-end;
   margin-left: auto;
+  @include media-375 {
+    align-items: flex-start;
+    margin-left: 0;
+  }
 }
 
 .contacts-link {

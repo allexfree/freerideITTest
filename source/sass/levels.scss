@@ -94,4 +94,8 @@
   @include media-xs {
     font-size: 14px;
   }
+
+  @include media-375 {
+    padding-left: 5px;
+  }
 }

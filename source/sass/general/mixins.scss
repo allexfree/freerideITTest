@@ -80,3 +80,9 @@ $double-dpx: 1.5dppx;
     @content;
   }
 }
+
+@mixin media-375 {
+  @media (max-width: $media-375) {
+    @content;
+  }
+}

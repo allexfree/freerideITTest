@@ -3,13 +3,13 @@
 
 .menu-burger {
   position: absolute;
-  top: 5px;
-  left: 0;
+  top: 15px;
+  left: 10px;
   width: 22px;
   display: none;
   align-self: center;
+  z-index: 1;
   @include media-767 {
-    left: 10px;
     display: block;
   }
 }

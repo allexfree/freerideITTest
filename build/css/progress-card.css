@@ -26,7 +26,8 @@
       .progress-card svg circle:nth-child(2) {
         stroke: #80C02F;
         stroke-dasharray: 503;
-        stroke-dashoffset: calc((503px * 94) / 100 - 503px); }
+        stroke-dashoffset: calc((503px * 94) / 100 - 503px);
+        stroke-dashoffset: -webkit-calc((503px * 94) / 100 - 503px); }
     @media (max-width: 576px) {
       .progress-card svg {
         transform: rotate(-90deg) scale(0.8); } }
@@ -42,7 +43,12 @@
       margin-left: 5%; } }
   @media (max-width: 576px) {
     .progress-card {
-      margin-left: 0; } }
+      margin-left: 0;
+      margin-right: 5%; } }
+  @media (max-width: 375px) {
+    .progress-card {
+      margin-right: 0;
+      transform: translateX(-20px); } }
 
 .progress-card-content {
   position: relative;
@@ -51,6 +57,9 @@
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media (max-width: 375px) {
+    .progress-card-content {
+      justify-content: flex-start; } }
 
 .progress-card-text {
   position: absolute;

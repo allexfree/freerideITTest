@@ -9,6 +9,8 @@
 .user-menu {
   display: flex;
   flex-wrap: wrap; }
+  .user-menu.user-menu-link--active {
+    border-top: none; }
   @media (max-width: 1280px) {
     .user-menu {
       justify-content: center; } }
